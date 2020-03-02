@@ -36,6 +36,57 @@
 像我的 btn 範例
 
 
+## webpack  使用方式
+
+### 安裝
+
+- 1. 全域安裝
+
+ ` npm i webpack webpack-cli -g`
+
+
+- 2. 專案安裝
+
+`npm i webpack webpack-cli  --save-dev`
+
+- 3. 建立配置檔
+
+ |- webpack.config.js
+
+```js
+ module.exports = {
+    //進入口
+    entry: './dev/js/index.js',
+    //輸出口
+    output: {
+        path: path.resolve(__dirname, 'dest/js'), //路徑
+        filename: 'bundle.js' //輸出檔案名稱
+   }
+ };
+```
+
+- 4. 執行指令
+
+ `webpack -d --watch` 開發時使用 
+ `webpack -p`  上線時使用
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
